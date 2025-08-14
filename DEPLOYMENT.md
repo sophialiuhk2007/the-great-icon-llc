@@ -6,7 +6,7 @@ This guide will help you deploy your website to GitHub Pages with custom domain 
 
 - GitHub account
 - Git installed on your computer
-- Custom domain (thegreaticon.com) registered and ready for DNS configuration
+- Custom domain (thegreaticonllc.com) registered and ready for DNS configuration
 
 ## 🏗️ Step 1: Create GitHub Repository
 
@@ -52,7 +52,7 @@ git push -u origin main
 
 ### In GitHub:
 
-1. In the **Pages** settings, enter `thegreaticon.com` in the custom domain field
+1. In the **Pages** settings, enter `thegreaticonllc.com` in the custom domain field
 2. Check "Enforce HTTPS" (recommended)
 3. GitHub will automatically create/update the CNAME file
 
@@ -80,7 +80,7 @@ Type: CNAME, Name: www, Value: YOUR_USERNAME.github.io
 ## 🧪 Step 6: Test Your Website
 
 1. **GitHub Pages URL**: `https://YOUR_USERNAME.github.io/the-great-icon-llc`
-2. **Custom Domain**: `https://thegreaticon.com` (after DNS propagation)
+2. **Custom Domain**: `https://thegreaticonllc.com` (after DNS propagation)
 
 ## 🔄 Step 7: Future Updates
 
@@ -152,4 +152,4 @@ Consider adding:
 
 ## 🎉 Success!
 
-Your website should now be live at `https://thegreaticon.com`!
+Your website should now be live at `https://thegreaticonllc.com`!

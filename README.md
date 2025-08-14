@@ -19,7 +19,7 @@ A modern, responsive website for The Great Icon LLC - specialists in verifiable 
 
 ## 🌐 Live Website
 
-- **Production**: [thegreaticon.com](https://thegreaticon.com) (custom domain)
+- **Production**: [thegreaticonllc.com](https://thegreaticonllc.com) (custom domain)
 - **GitHub Pages**: [your-username.github.io/the-great-icon-llc](https://your-username.github.io/the-great-icon-llc)
 
 ## 📂 Project Structure
@@ -91,8 +91,8 @@ git push -u origin main
 ## 📧 Contact Information
 
 - **Company**: The Great Icon LLC
-- **Email**: info@thegreaticon.com
-- **Website**: [thegreaticon.com](https://thegreaticon.com)
+- **Email**: info@thegreaticonllc.com
+- **Website**: [thegreaticonllc.com](https://thegreaticonllc.com)
 
 ## 📄 License
 
@@ -100,4 +100,4 @@ git push -u origin main
 
 ## 🤝 Contributing
 
-This is a private company website. For business inquiries, please contact info@thegreaticon.com.
+This is a private company website. For business inquiries, please contact info@thegreaticonllc.com.
