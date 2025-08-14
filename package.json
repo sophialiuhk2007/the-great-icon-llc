@@ -1,0 +1,30 @@
+{
+  "name": "the-great-icon-llc-website",
+  "version": "1.0.0",
+  "description": "Official website for The Great Icon LLC - Verifiable Credential Solutions",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "deploy": "git add . && git commit -m 'Deploy website updates' && git push origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/the-great-icon-llc.git"
+  },
+  "keywords": [
+    "verifiable-credentials",
+    "digital-identity",
+    "apple-wallet",
+    "privacy",
+    "security",
+    "blockchain",
+    "decentralized-identity"
+  ],
+  "author": "The Great Icon LLC",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/the-great-icon-llc/issues"
+  },
+  "homepage": "https://thegreaticon.com"
+}

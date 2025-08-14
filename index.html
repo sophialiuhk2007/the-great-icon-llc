@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Great Icon LLC - Verifiable Credential Solutions</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="The Great Icon LLC specializes in verifiable credential solutions, secure digital identity, and seamless Apple Wallet integration. Privacy-preserving technology for modern identity management."
+    />
+    <meta
+      name="keywords"
+      content="verifiable credentials, digital identity, Apple Wallet, privacy, security, blockchain, decentralized identity, credential management"
+    />
+    <meta name="author" content="The Great Icon LLC" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="The Great Icon LLC - Verifiable Credential Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Empowering users with privacy-preserving verifiable credential technology and seamless Apple Wallet integration"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thegreaticon.com" />
+    <meta property="og:site_name" content="The Great Icon LLC" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="The Great Icon LLC - Verifiable Credential Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="Empowering users with privacy-preserving verifiable credential technology and seamless Apple Wallet integration"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thegreaticon.com" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #e0e0e0;
+        background: linear-gradient(
+          135deg,
+          #0a0a0a 0%,
+          #1a1a2e 50%,
+          #16213e 100%
+        );
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+            circle at 20% 50%,
+            rgba(120, 119, 198, 0.3) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(255, 119, 198, 0.3) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 40% 80%,
+            rgba(120, 198, 255, 0.3) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        background: rgba(10, 10, 26, 0.9);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(120, 119, 198, 0.2);
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        background: linear-gradient(45deg, #00d4ff, #ff00c3, #00ff88);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: gradientShift 3s ease-in-out infinite;
+      }
+
+      @keyframes gradientShift {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #e0e0e0;
+        transition: all 0.3s ease;
+        position: relative;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+      }
+
+      .nav-links a:hover {
+        color: #00d4ff;
+        background: rgba(0, 212, 255, 0.1);
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+      }
+
+      main {
+        margin-top: 80px;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 150px 0;
+        color: white;
+        position: relative;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            45deg,
+            transparent 30%,
+            rgba(0, 212, 255, 0.1) 70%
+          ),
+          linear-gradient(-45deg, transparent 30%, rgba(255, 0, 195, 0.1) 70%);
+        pointer-events: none;
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, #00d4ff, #ff00c3, #00ff88);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: gradientShift 4s ease-in-out infinite;
+        text-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero p {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        position: relative;
+        z-index: 1;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background: linear-gradient(45deg, #00d4ff, #ff00c3);
+        color: white;
+        padding: 18px 40px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        transition: all 0.4s ease;
+        box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .cta-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 20px 40px rgba(0, 212, 255, 0.6);
+      }
+
+      .cta-button:hover::before {
+        left: 100%;
+      }
+
+      .section {
+        padding: 100px 0;
+        background: rgba(15, 15, 30, 0.8);
+        backdrop-filter: blur(10px);
+        position: relative;
+      }
+
+      .section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          45deg,
+          rgba(0, 212, 255, 0.05) 0%,
+          transparent 50%,
+          rgba(255, 0, 195, 0.05) 100%
+        );
+        pointer-events: none;
+      }
+
+      .section:nth-child(even) {
+        background: rgba(20, 20, 40, 0.9);
+      }
+
+      .section:nth-child(even)::before {
+        background: linear-gradient(
+          -45deg,
+          rgba(0, 255, 136, 0.05) 0%,
+          transparent 50%,
+          rgba(0, 212, 255, 0.05) 100%
+        );
+      }
+
+      .section h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        background: linear-gradient(45deg, #00d4ff, #ff00c3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        position: relative;
+      }
+
+      .section h2::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(45deg, #00d4ff, #ff00c3);
+        border-radius: 2px;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+        margin-top: 3rem;
+      }
+
+      .feature {
+        text-align: center;
+        padding: 3rem;
+        background: rgba(30, 30, 50, 0.8);
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 212, 255, 0.2);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .feature::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          45deg,
+          rgba(0, 212, 255, 0.1) 0%,
+          transparent 50%,
+          rgba(255, 0, 195, 0.1) 100%
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .feature:hover {
+        transform: translateY(-15px) scale(1.03);
+        box-shadow: 0 25px 60px rgba(0, 212, 255, 0.4);
+        border-color: rgba(0, 212, 255, 0.5);
+      }
+
+      .feature:hover::before {
+        opacity: 1;
+      }
+
+      .feature-icon {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.5));
+      }
+
+      .feature h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #ffffff;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature p {
+        color: #b0b0b0;
+        position: relative;
+        z-index: 1;
+      }
+
+      .company-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .info-card {
+        background: rgba(30, 30, 50, 0.8);
+        backdrop-filter: blur(20px);
+        padding: 2.5rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 212, 255, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .info-card:hover {
+        border-color: rgba(0, 212, 255, 0.5);
+        box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+      }
+
+      .info-card h3 {
+        background: linear-gradient(45deg, #00d4ff, #00ff88);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 1rem;
+      }
+
+      .info-card p {
+        color: #d0d0d0;
+      }
+
+      footer {
+        background: rgba(5, 5, 15, 0.95);
+        backdrop-filter: blur(20px);
+        color: white;
+        text-align: center;
+        padding: 4rem 0;
+        border-top: 1px solid rgba(0, 212, 255, 0.2);
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-section h3 {
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, #00d4ff, #ff00c3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .footer-section a {
+        color: #b0b0b0;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .footer-section a:hover {
+        color: #00d4ff;
+        text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero p {
+          font-size: 1.1rem;
+        }
+
+        .nav-links {
+          display: none;
+        }
+      }
+
+      .privacy-badge {
+        display: inline-block;
+        background: linear-gradient(45deg, #00ff88, #00d4ff);
+        color: #000;
+        padding: 8px 20px;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        margin-left: 10px;
+        font-weight: bold;
+        box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+      }
+
+      .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .tech-item {
+        background: rgba(30, 30, 50, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 1.5rem;
+        border-radius: 12px;
+        text-align: center;
+        border: 1px solid rgba(0, 212, 255, 0.3);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .tech-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 212, 255, 0.1),
+          transparent
+        );
+        transition: left 0.5s ease;
+      }
+
+      .tech-item:hover {
+        border-color: rgba(0, 212, 255, 0.6);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+      }
+
+      .tech-item:hover::before {
+        left: 100%;
+      }
+
+      .tech-item h4 {
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+      }
+
+      .tech-item p {
+        color: #b0b0b0;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">The Great Icon LLC</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#technology">Technology</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <h1>Secure Digital Identity Solutions</h1>
+          <p>
+            Empowering users with privacy-preserving verifiable credential
+            technology and seamless Apple Wallet integration
+          </p>
+          <a href="#solutions" class="cta-button">Explore Our Solutions</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About The Great Icon LLC</h2>
+          <p
+            style="
+              text-align: center;
+              font-size: 1.2rem;
+              max-width: 800px;
+              margin: 0 auto;
+            "
+          >
+            The Great Icon LLC is a technology company specializing in
+            verifiable credential solutions that prioritize user privacy and
+            security. We develop innovative mobile applications that enable
+            secure credential management while integrating seamlessly with
+            Apple's ecosystem.
+          </p>
+
+          <div class="company-info">
+            <div class="info-card">
+              <h3>🚀 Our Mission</h3>
+              <p>
+                To provide users with secure, privacy-preserving digital
+                credential solutions that put control back in their hands while
+                ensuring seamless integration with trusted platforms like Apple
+                Wallet.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>🔒 Security & Privacy</h3>
+              <p>
+                We implement industry-leading security standards and
+                privacy-by-design principles, ensuring that user data remains
+                protected and under user control at all times.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" class="section">
+        <div class="container">
+          <h2>Our Solutions</h2>
+
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">📱</div>
+              <h3>Verifiable Credential Wallet</h3>
+              <p>
+                A secure mobile application that allows users to receive, store,
+                and manage verifiable credentials with complete privacy and
+                control. Our wallet supports industry-standard protocols and
+                ensures credentials remain tamper-proof.
+              </p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">🔐</div>
+              <h3>Selective Disclosure Technology</h3>
+              <p>
+                Advanced privacy-preserving technology that enables users to
+                share only the necessary information from their credentials,
+                protecting personal data while meeting verification
+                requirements.
+              </p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">💎</div>
+              <h3>Apple Wallet Integration</h3>
+              <p>
+                Seamless transfer of compatible credentials from our secure
+                wallet directly to Apple Wallet, providing users with the
+                convenience of native iOS integration while maintaining security
+                standards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="technology" class="section">
+        <div class="container">
+          <h2>Technology & Standards</h2>
+          <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem">
+            Our solutions are built on industry-standard protocols and
+            cutting-edge technology to ensure interoperability, security, and
+            user privacy.
+          </p>
+
+          <div class="tech-grid">
+            <div class="tech-item">
+              <h4>W3C Standards</h4>
+              <p>Verifiable Credentials & DIDs</p>
+            </div>
+            <div class="tech-item">
+              <h4>Zero-Knowledge Proofs</h4>
+              <p>Privacy-Preserving Verification</p>
+            </div>
+            <div class="tech-item">
+              <h4>iOS Native</h4>
+              <p>Swift & Apple Frameworks</p>
+            </div>
+            <div class="tech-item">
+              <h4>Cryptographic Security</h4>
+              <p>End-to-End Encryption</p>
+            </div>
+            <div class="tech-item">
+              <h4>Apple Wallet APIs</h4>
+              <p>PassKit Integration</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+          "
+        >
+          <div style="text-align: center">
+            <h3
+              style="
+                background: linear-gradient(45deg, #00d4ff, #ff00c3);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin-bottom: 0.5rem;
+                font-size: 1.5rem;
+              "
+            >
+              The Great Icon LLC
+            </h3>
+            <p style="color: #b0b0b0; margin: 0; font-size: 1.1rem">
+              Secure digital identity solutions powered by verifiable credential
+              technology
+            </p>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 2rem;
+              flex-wrap: wrap;
+            "
+          >
+            <p style="margin: 0">
+              <strong>Contact:</strong> info@thegreaticon.com
+            </p>
+            <a
+              href="https://www.privacypolicies.com/live/771d3df7-e71d-4a78-9bd6-273d3241655b"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: #00d4ff; text-decoration: none; font-weight: 500"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+
+        <div
+          style="
+            border-top: 1px solid rgba(0, 212, 255, 0.2);
+            padding-top: 2rem;
+            text-align: center;
+          "
+        >
+          <p>&copy; 2025 The Great Icon LLC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Add scroll effect to header
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+          header.style.background = "rgba(10, 10, 26, 0.95)";
+          header.style.borderBottom = "1px solid rgba(0, 212, 255, 0.4)";
+        } else {
+          header.style.background = "rgba(10, 10, 26, 0.9)";
+          header.style.borderBottom = "1px solid rgba(120, 119, 198, 0.2)";
+        }
+      });
+
+      // Add floating particles effect
+      function createParticle() {
+        const particle = document.createElement("div");
+        particle.style.position = "fixed";
+        particle.style.width = Math.random() * 4 + "px";
+        particle.style.height = particle.style.width;
+        particle.style.background = `rgba(${
+          Math.random() > 0.5 ? "0, 212, 255" : "255, 0, 195"
+        }, 0.6)`;
+        particle.style.borderRadius = "50%";
+        particle.style.left = Math.random() * window.innerWidth + "px";
+        particle.style.top = window.innerHeight + "px";
+        particle.style.pointerEvents = "none";
+        particle.style.zIndex = "-1";
+        document.body.appendChild(particle);
+
+        const animation = particle.animate(
+          [
+            { transform: "translateY(0px)", opacity: 1 },
+            {
+              transform: `translateY(-${window.innerHeight + 100}px)`,
+              opacity: 0,
+            },
+          ],
+          {
+            duration: Math.random() * 3000 + 2000,
+            easing: "linear",
+          }
+        );
+
+        animation.onfinish = () => particle.remove();
+      }
+
+      // Create particles periodically
+      setInterval(createParticle, 300);
+
+      // Animate elements on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all feature cards and info cards
+      document.querySelectorAll(".feature, .info-card").forEach((card) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(30px)";
+        card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(card);
+      });
+    </script>
+  </body>
+</html>
